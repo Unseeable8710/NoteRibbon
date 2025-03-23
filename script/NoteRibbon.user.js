@@ -7,7 +7,7 @@
 // @license      GNU GPL v3.0
 // @tag          productivity
 // @tag          utilities
-// @match        https://www.noteflight.com/scores/view/*
+// @match        *://www.noteflight.com/scores/view/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=noteflight.com
 // @grant        GM_addStyle
 // @grant        GM_getValue
