@@ -1,9 +1,5 @@
 {
   "config": {
-    "customRules": [
-      {
-        "MD033": false
-      }
-    ]
+    "MD033": false
   }
 }
