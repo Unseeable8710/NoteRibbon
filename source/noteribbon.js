@@ -24,8 +24,8 @@ function getElem(selector) {
 GM_registerMenuCommand("Open NoteRibbon Settings", showHideSettings);
 (function() {
   'use strict';
-  const scorePalette = getElem("#scorePalette");
-  const paletteDrop = getElem(".sectionMenuTriggerContainer");
-  const sectionsWrapper = getElem("#sectionsWrapper");
+  const scorePalette = Element(getElem("#scorePalette"));
+  const paletteDrop = Element(getElem(".sectionMenuTriggerContainer"));
+  const sectionsWrapper = Element(getElem("#sectionsWrapper"));
   sectionsWrapper.innerText = ""
 })();
