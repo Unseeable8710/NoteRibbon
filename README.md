@@ -12,17 +12,13 @@ Complete
 
 ### Code
 
-#### HTML
+#### Ribbon
 
 Not started
 
-#### CSS
+#### Settings menu
 
 Not started
-
-#### JavaScript
-
-Incomplete
 
 ## Documentation
 
