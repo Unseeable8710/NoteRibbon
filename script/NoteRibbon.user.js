@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         NoteRibbon
 // @namespace    Unseeable871's Stuff
-// @version      v0.0.0-a1_6
+// @version      v0.0.0-a1_7
 // @description  Replaces Noteflight's palette in the score editor with a fully functional ribbon, similar to the ribbon in Windows 8, Windows 8.1, Windows 10, and Microsoft Office apps.
 // @author       Colton Stone
-// @license      GPL-3.0-or-later
+// @license      GNU GPL v3.0
 // @tag          productivity
 // @tag          utilities
 // @match        https://www.noteflight.com/scores/view/*
