@@ -2,7 +2,7 @@ var uwind = uwindow = unsafeWindow;
 function showHideSettings() {
   console.log("Menu command executed");
 }
-function (selector) {
+function getElem(selector) {
   return new Promise(resolve => {
     if (document.querySelector(selector)) {
       return resolve(document.querySelector(selector));
@@ -24,8 +24,6 @@ function (selector) {
 GM_registerMenuCommand("Open NoteRibbon Settings", showHideSettings);
 (function() {
   'use strict';
-  setTimeout(() => {
-    const scorePalette = waitForElm("#scorePalette");
-    console.log(scorePalette);
-  }, 10000);
+  const scorePalette = getElem("#scorePalette");
+  console.log(scorePalette);
 })();
