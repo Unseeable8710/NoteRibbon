@@ -6,6 +6,8 @@ var uwind = uwindow = unsafeWindow;
 GM_registerMenuCommand("Open NoteRibbon Settings", showHideSettings);
 (function() {
   'use strict';
-  const scorePalette = document.getElementById("scorePalette");
-  console.log(scorePalette);
+  setTimeout(() => {
+    const scorePalette = document.getElementById("scorePalette");
+    console.log(scorePalette);
+  }, 10000);
 })();
