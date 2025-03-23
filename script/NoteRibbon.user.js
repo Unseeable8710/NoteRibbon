@@ -10,6 +10,6 @@
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=noteflight.com
 // @grant        GM_addStyle
 // @require      https://raw.githubusercontent.com/Unseeable8710/NoteRibbon/refs/heads/main/source/noteribbon.js
-// @downloadURL  https://raw.githubusercontent.com/Unseeable8710/NoteRibbon/refs/heads/main/script/NoteRibbon-0.0.0.user.js
-// @updateURL    https://raw.githubusercontent.com/Unseeable8710/NoteRibbon/refs/heads/main/script/NoteRibbon-0.0.0.user.js
+// @downloadURL  https://github.com/Unseeable8710/NoteRibbon/raw/refs/heads/main/script/NoteRibbon.user.js
+// @updateURL    https://github.com/Unseeable8710/NoteRibbon/raw/refs/heads/main/script/NoteRibbon.user.js
 // ==/UserScript==
