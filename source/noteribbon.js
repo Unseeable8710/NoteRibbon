@@ -1,12 +1,9 @@
 var uwind = uwindow = unsafeWindow;
 function showHideSettings() {
-  if($("#startube-settings-window-entity.hid") != null){
-    $("#startube-settings-window-entity").classList.remove("hid");
-  } else if($("#startube-settings-window.hid") == null){
-    $("#startube-settings-window-entity").classList.add("hid");
-  }
-  if($(".jfk-dialog-background.hid") == null){
-    $(".jfk-dialog-background").click();
+  if ($("#noteRibbonSettings.hid") != null) {
+    $("#noteRibbonSettings").classList.remove("hid");
+  } else if ($("#noteRibbonSetings") == null) {
+    $("#noteRibbonSettings").classList.add("hid");
   }
 }
 function getElem(selector) {
@@ -32,5 +29,11 @@ GM_registerMenuCommand("Open NoteRibbon Settings", showHideSettings);
   const scorePalette = getElem("#scorePalette");
   const paletteDrop = getElem(".sectionMenuTriggerContainer");
   const sectionsWrapper = getElem("#sectionsWrapper");
-  sectionsWrapper.innerHTML = ""
+  const settings = document.createElement("div");
+  settings.id = "noteRibbonSettings";
+  // settings.classList.add("hid");
+  settings.innerHTML = `
+  
+  `
+  sectionsWrapper.innerHTML = "";
 })();
