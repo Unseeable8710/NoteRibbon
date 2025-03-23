@@ -1,3 +1,9 @@
 {
-  "MD033": false
+  "config": {
+    "customRules": [
+      {
+        "MD033": false
+      }
+    ]
+  }
 }
