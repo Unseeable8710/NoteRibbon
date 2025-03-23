@@ -1,10 +1,7 @@
 (function() {
   'use strict';
 
-  const settingsMenuCmd = GM_registerMenuCommand("Settings", openSettings, {
-    id: "setCmd",
-    title: "Open Settings"
-  });
+  GM_registerMenuCommand("Open NoteRibbon Settings", openSettings);
   
   function openSettings() {
 
