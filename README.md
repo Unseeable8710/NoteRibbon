@@ -1,4 +1,4 @@
-# NoteRibbon 
+# NoteRibbon
 
 ## About
 
@@ -37,6 +37,5 @@ Not started
 Go to the [wiki](https://github.com/Unseeable8710/NoteRibbon/wiki) for documentation on how to use NoteRibbon.
 
 ## Gallery
-
 
 ## Footnotes
