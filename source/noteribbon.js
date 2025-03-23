@@ -1,8 +1,8 @@
-GM_registerMenuCommand("Open NoteRibbon Settings", openSettings);
-function openSettings() {
-
+function showHideSettings() {
+  
 }
 
+GM_registerMenuCommand("Open NoteRibbon Settings", showHideSettings);
 (function() {
   'use strict';
 })();
