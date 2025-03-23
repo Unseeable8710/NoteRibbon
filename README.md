@@ -26,6 +26,6 @@ Incomplete
 
 ## Documentation
 
-Go to the [wiki](/wiki) for documentation on how to use this script.
+Go to the [wiki](https://github.com/Unseeable8710/NoteRibbon/wiki) for documentation on how to use this script.
 
 ## Gallery
