@@ -24,6 +24,7 @@ function getElem(selector) {
     });
   });
 }
+
 GM_registerMenuCommand("Open NoteRibbon Settings", showHideSettings);
 (function() {
   const scorePalette = getElem("#scorePalette");
