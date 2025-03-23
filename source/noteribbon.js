@@ -1,6 +1,13 @@
 var uwind = uwindow = unsafeWindow;
 function showHideSettings() {
-  console.log("Menu command executed");
+  if($("#startube-settings-window-entity.hid") != null){
+    $("#startube-settings-window-entity").classList.remove("hid");
+  } else if($("#startube-settings-window.hid") == null){
+    $("#startube-settings-window-entity").classList.add("hid");
+  }
+  if($(".jfk-dialog-background.hid") == null){
+    $(".jfk-dialog-background").click();
+  }
 }
 function getElem(selector) {
   return new Promise(resolve => {
@@ -20,7 +27,6 @@ function getElem(selector) {
     });
   });
 }
-
 GM_registerMenuCommand("Open NoteRibbon Settings", showHideSettings);
 (function() {
   const scorePalette = getElem("#scorePalette");
