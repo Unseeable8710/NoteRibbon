@@ -14,7 +14,7 @@ The structure of a stable release is `major.minor.patch_build`, which is actuall
 
 #### Pre-releases
 
-You might be wondering why I decided to use an underscore for the build number. Well, the answer is consistency. This is because the structure of a pre-release is `major.minor.patch-an_build` for alpha releases, `major.minor.patch-bn_build` for beta releases, and `major-minor.patch-rcn_build` for release candidates (aka gamma releases).<sup>[1](#footnotes)</sup>
+You might be wondering why I decided to use an underscore for the build number. Well, the answer is consistency. This is because the structure of a pre-release is `major.minor.patch-bN_build` for a beta release<sup>[1](#1)</sup> and `major.minor.patch-rcN_build` for a release candidate<sup>[2](#2)</sup>, where `rc` stands for "release candidate" and `N` is the pre-release number.
 
 ## Status
 
@@ -39,3 +39,11 @@ Go to the [wiki](https://github.com/Unseeable8710/NoteRibbon/wiki) for documenta
 ## Gallery
 
 ## Footnotes
+
+### 1
+
+In this project, a beta release is a pre-release meant for testing. There are most certainly bugs in a beta release, so betas are released for the community to test and provide feedback on.
+
+### 2
+
+A release candidate is a pre-release that <underline>supposedly</underline> doesn't contain any more bugs, but it isn't ready to be a stable release. When a release candidate number increments, it means that one or more new features was added and more are planned before the stable release.
