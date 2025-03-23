@@ -1,11 +1,5 @@
 var uwind = uwindow = unsafeWindow;
-function showHideSettings() {
-  if ($("#noteRibbonSettings.hid") != null) {
-    $("#noteRibbonSettings").classList.remove("hid");
-  } else if ($("#noteRibbonSetings") == null) {
-    $("#noteRibbonSettings").classList.add("hid");
-  }
-}
+
 function getElem(selector) {
   return new Promise(resolve => {
     if (document.querySelector(selector)) {
@@ -25,7 +19,6 @@ function getElem(selector) {
   });
 }
 
-GM_registerMenuCommand("Open NoteRibbon Settings", showHideSettings);
 (function() {
   const scorePalette = getElem("#scorePalette");
   const paletteDrop = getElem(".sectionMenuTriggerContainer");
