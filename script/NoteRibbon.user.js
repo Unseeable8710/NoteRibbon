@@ -15,9 +15,9 @@
 // @grant        GM_registerMenuCommand
 // @grant        GM_setValue
 // @grant        unsafeWindow
-// @require      https://github.com/Unseeable8710/NoteRibbon/raw/refs/heads/main/source/noteribbon.js
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js
-// @require      
+// @require      https://github.com/Unseeable8710/NoteRibbon/raw/refs/heads/main/source/settings.js
+// @require      https://github.com/Unseeable8710/NoteRibbon/raw/refs/heads/main/source/noteribbon.js
 // @downloadURL  https://github.com/Unseeable8710/NoteRibbon/raw/refs/heads/main/script/NoteRibbon.user.js
 // @updateURL    https://github.com/Unseeable8710/NoteRibbon/raw/refs/heads/main/script/NoteRibbon.user.js
 // ==/UserScript==

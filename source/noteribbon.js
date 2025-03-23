@@ -32,8 +32,6 @@ GM_registerMenuCommand("Open NoteRibbon Settings", showHideSettings);
   const settings = document.createElement("div");
   settings.id = "noteRibbonSettings";
   // settings.classList.add("hid");
-  settings.innerHTML = `
-  
-  `
+  settings.innerHTML = ;
   sectionsWrapper.innerHTML = "";
 })();
