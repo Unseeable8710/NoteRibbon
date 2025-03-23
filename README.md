@@ -46,4 +46,4 @@ In this project, a beta release is a pre-release meant for testing. There are mo
 
 ### 2
 
-A release candidate is a pre-release that <underline>supposedly</underline> doesn't contain any more bugs, but it isn't ready to be a stable release. When a release candidate number increments, it means that one or more new features was added and more are planned before the stable release.
+A release candidate is a pre-release that *supposedly* doesn't contain any more bugs, but it isn't ready to be a stable release. When a release candidate number increments, it means that one or more new features were added and more are planned before the stable release.
