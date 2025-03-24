@@ -1,7 +1,11 @@
 <div id="settings">
   <div id="settingsBackground"></div>
   <div id="settingsWrapper">
-    
+    <div id="settingsHeader">
+      <div id="settingsTitle">
+        <span>NoteRibbon Settings</span>
+      </div>
+    </div>
   </div>
   <style>
     @keyframes settings {
@@ -27,6 +31,9 @@
         overflow: hidden;
       }
     }
+    body {
+      --nfor: hsl(13, 92%, 55%); /*Noteflight's orange color*/
+    }
     #settingsBackground {
       position: fixed;
       z-index: 2147483646;
@@ -50,6 +57,13 @@
       background: hsl(195, 25%, 97%);
       border: 1px hsl(0, 0%, 77%) solid;
       box-shadow: 0 0 15px hsla(0, 0%, 0%, 18%);
+    }
+    #settingsHeader {
+      padding: 17px 15px;
+      background: var(--nfor);
+      color: #fff;
+      font-size: 13.5pt;
+      border-bottom: 1px hsl(0, 0%, 77%) solid;
     }
     #settingsWrapper:not(.hid) #settingsWrapper {
       animation: .75s future 1;
