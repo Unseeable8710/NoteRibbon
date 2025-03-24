@@ -27,5 +27,5 @@ function getElem(selector) {
   settings.id = "noteRibbonSettings";
   settings.classList.add("hid");
   settingsElem.innerHTML = settings;
-  sectionsWrapper.innerHTML = "";
+  sectionsWrapper.innerHTML = ribbon;
 })();

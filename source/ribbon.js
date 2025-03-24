@@ -1,1 +1,1 @@
-const settings = document.getElementById("ribbon").innerHTML;
+const ribbon = document.getElementById("ribbon").innerHTML;
