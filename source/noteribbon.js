@@ -24,8 +24,8 @@ function getElem(selector) {
   const paletteDrop = getElem(".sectionMenuTriggerContainer");
   const sectionsWrapper = getElem("#sectionsWrapper");
   const settingsElem = document.createElement("div");
-  settings.id = "noteRibbonSettings";
-  settings.classList.add("hid");
+  settingsElem.id = "noteRibbonSettings";
+  settingsElem.classList.add("hid");
   settingsElem.innerHTML = settings;
   sectionsWrapper.innerHTML = ribbon;
 })();
