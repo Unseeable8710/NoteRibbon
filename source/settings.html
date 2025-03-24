@@ -4,6 +4,29 @@
 
   </div>
   <style>
+    @keyframes settings {
+      0% {
+        width: 0;
+        height: 5px;
+        overflow: hidden;
+      }
+      20% {
+          width: 0;
+          height: 5px;
+          overflow: hidden;
+      }
+      50% {
+          width: 1200px;
+      }
+      
+      70% {
+          height: 5px;
+      }
+      100% {
+          height: 90vh;
+          overflow: hidden;
+      }
+    }
     #settingsBackground {
       position: fixed;
       z-index: 2147483646;
@@ -26,6 +49,9 @@
       transition: 1s opacity;
       background: hsl(195, 25%, 97%);
       border: 1px hsl(195, 6.25%, 57%) solid;
+    }
+    #settingsWrapper:not(.hid) #settingsWrapper {
+      animation: .75s future 1;
     }
     .hid {
       opacity: 0 !important;
