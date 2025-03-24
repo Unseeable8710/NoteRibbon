@@ -26,6 +26,9 @@ Go to the [wiki](https://github.com/Unseeable8710/NoteRibbon/wiki) for documenta
 
 ## Gallery
 
+Windows 10 ribbon:
+![image](https://github.com/user-attachments/assets/3b211c7d-4739-4ea4-b357-0bc02c1bfccf)
+
 ## Footnotes
 
 ### 1
