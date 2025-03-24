@@ -22,12 +22,3 @@
 // @downloadURL  https://github.com/Unseeable8710/NoteRibbon/raw/refs/heads/main/script/NoteRibbon.user.js
 // @updateURL    https://github.com/Unseeable8710/NoteRibbon/raw/refs/heads/main/script/NoteRibbon.user.js
 // ==/UserScript==
-
-function showHideSettings() {
-  if ($("#noteRibbonSettings.hid") != null) {
-    $("#noteRibbonSettings").classList.remove("hid");
-  } else if ($("#noteRibbonSetings") == null) {
-    $("#noteRibbonSettings").classList.add("hid");
-  }
-}
-GM_registerMenuCommand("Open NoteRibbon Settings", showHideSettings);
