@@ -38,6 +38,7 @@
     }
     #settings {
       --nfcol: hsl(16, 99%, 43%);
+      --boxWidth: calc(100vw * 2 / 3)
       font-family: Graphik, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
     #settingsBackground {
@@ -54,7 +55,7 @@
     #settingsWrapper {
       position: fixed;
       z-index: 2147483647;
-      width: calc(100vw * 2 / 3);
+      width: var(--boxWidth);
       height: 90vh;
       top: 5%;
       left: calc(100% / 6);
@@ -73,9 +74,9 @@
       font-weight: 400;
     }
     #settingsBody {
-      width: 100%;
+      width: var(--boxWidth);
       height: 100%;
-      border: 2px #000 solid;
+      border: 1px #000 solid;
     }
     #settingsWrapper:not(.hid) #settingsWrapper {
       animation: .75s future 1;
