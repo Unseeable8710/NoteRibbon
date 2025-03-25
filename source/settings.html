@@ -39,7 +39,7 @@
     #settings {
       --nfcol: hsl(16, 99%, 43%);
       --boxWidth: calc(100vw * 2 / 3);
-      --setBodyHeight: calc(90vh - 34px);
+      --setBodyHeight: calc(90vh - 52px);
       font-family: Graphik, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
     #settingsBackground {
@@ -75,12 +75,15 @@
       font-weight: 400;
     }
     #settingsBody {
-      width: var(--boxWidth);
+      position: relative;
+      top: 0%;
+      left: 0%;
+      width: calc(var(--boxWidth) - 1px);
       height: var(--setBodyHeight);
       border: 1px #000 solid;
     }
     #settingsWrapper:not(.hid) #settingsWrapper {
-      animation: .75s future 1;
+      animation: 0.75s settings 1;
     }
     .hid {
       opacity: 0 !important;
