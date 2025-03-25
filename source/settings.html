@@ -39,6 +39,7 @@
     #settings {
       --nfcol: hsl(16, 99%, 43%);
       --boxWidth: calc(100vw * 2 / 3);
+      --setBodyHeight: calc(90vh - 34px);
       font-family: Graphik, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
     #settingsBackground {
@@ -75,7 +76,7 @@
     }
     #settingsBody {
       width: var(--boxWidth);
-      height: 100%;
+      height: var(--setBodyHeight);
       border: 1px #000 solid;
     }
     #settingsWrapper:not(.hid) #settingsWrapper {
