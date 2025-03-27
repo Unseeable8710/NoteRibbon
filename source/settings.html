@@ -42,7 +42,6 @@
     #settings {
       --nfcol: hsl(16, 99%, 43%);
       --boxWidth: calc(100vw * 2 / 3);
-      --modBoxWidth: calc(var(--boxWidth) - 1);
       --borderColor: hsl(0, 0%, 77%);
       font-family: Graphik, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
@@ -82,7 +81,7 @@
       position: relative;
       top: 0%;
       left: 0%;
-      width: var(--modBoxWidth);
+      width: calc(var(--boxWidth) - 1);
       height: 83.427vh;
     }
     #settingsSidebar {
@@ -90,7 +89,7 @@
       top: 0%;
       left: 0%;
       width: 20%;
-      height: var(--modBoxWidth);
+      height: 83.427vh;
       border-right: 2px var(--borderColor) solid;
     }
     #noteRibbonSettings:not(.hid) #noteRibbonSettings {
