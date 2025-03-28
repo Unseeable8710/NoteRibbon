@@ -70,26 +70,32 @@
       box-shadow: 0 0 15px hsla(0, 0%, 0%, 18%);
     }
     #settingsHeader {
-      padding: 17px 15px;
+      height: 10vh;
       background: var(--nfcol);
       color: #fff;
-      font-size: 13.5pt;
+      font-size: 14pt;
       border-bottom: 1px hsl(0, 0%, 77%) solid;
       font-weight: 400;
+    }
+    #settingsTitle {
+      position: relative;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
     }
     #settingsBody {
       position: relative;
       top: 0%;
       left: 0%;
       width: calc(var(--boxWidth) - 1);
-      height: 83.427vh;
+      height: 80vh;
     }
     #settingsSidebar {
       position: relative;
       top: 0%;
       left: 0%;
       width: 20%;
-      height: 83.543vh;
+      height: 80vh;
       border-right: 2px var(--borderColor) solid;
     }
     #noteRibbonSettings:not(.hid) #noteRibbonSettings {
