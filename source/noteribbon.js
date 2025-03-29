@@ -1,10 +1,10 @@
 var uwind = uwindow = unsafeWindow;
 
 function showHideSettings() {
-  if ($("#noteRibbonSettings.hid") != null) {
-    $("#noteRibbonSettings").classList.remove("hid");
-  } else if ($("#noteRibbonSetings") == null) {
-    $("#noteRibbonSettings").classList.add("hid");
+  if (getElem("#noteRibbonSettings.hid") != null) {
+    getElem("#noteRibbonSettings").classList.remove("hid");
+  } else if (getElem("#noteRibbonSetings") == null) {
+    getElem("#noteRibbonSettings").classList.add("hid");
   }
 }
 function getElem(selector) {
