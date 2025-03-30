@@ -29,11 +29,9 @@ GM_registerMenuCommand("Open NoteRibbon Settings", showHideSettings);
 
 (function() {
   const scorePalette = getElem("#scorePalette");
-  const paletteDrop = getElem(".sectionMenuTriggerContainer");
-  const sectionsWrapper = getElem("#sectionsWrapper");
   const settingsElem = document.createElement("div");
   settingsElem.id = "noteRibbonSettings";
   settingsElem.classList.add("hid");
   settingsElem.innerHTML = settings;
-  sectionsWrapper.innerHTML = ribbon;
+  scorePalette.innerHTML = ribbon;
 })();
