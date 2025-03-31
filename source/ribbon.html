@@ -54,6 +54,10 @@
   <style>
     #ribbon {
       --borderColor1: hsl(0, 0%, 77%);
+      --nfcol: hsl(16, 99%, 43%);
+      --nfcolDark: hsl(16, 99%, 33%);
+      --hoverCol: hsla(0, 0%, 100%, 25%);
+      --nfcolAlt: hsl(224, 19%, 85%);
     }
     #toolbars {
       position: absolute;
@@ -61,6 +65,23 @@
       left: 0%;
       width: 100vw;
       border-bottom: 1px var(--borderColor1) solid;
+    }
+    .tab {
+      display: inline;
+      color: var(--nfcol);
+      font-size: 12pt;
+      background-color: var(--nfcolAlt);
+      height: 13pt;
+      border-top: 1px var(--borderColor1);
+      border-left: 1px var(--borderColor1);
+      border-right: 1px var(--borderColor1);
+    }
+    .tab #fileTab {
+      color: var(--nfcolAlt);
+      background-color: var(--nfcol);
+    }
+    .tab:hover {
+      background-image: var(--hoverCol);
     }
   </style>
   <script src="./ribbon.js"></script>
