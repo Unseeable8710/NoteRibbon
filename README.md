@@ -8,7 +8,7 @@ I created NoteRibbon on March 23, 2025 because I wanted a much cleaner user inte
 
 You can download the userscript here: [https://github.com/Unseeable8710/NoteRibbon/raw/refs/heads/main/script/NoteRibbon.user.js](https://github.com/Unseeable8710/NoteRibbon/raw/refs/heads/main/script/NoteRibbon.user.js)
 
-It's also available on GreasyFork
+It will be available on GreasyFork when I finish the first release.
 
 ## Documentation
 
