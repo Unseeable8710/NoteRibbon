@@ -2,7 +2,7 @@
 
 ## about
 
-i created noteribbon on march 23 2025 because i wanted a much cleaner user interface for the palettes that noteflight uses in the score editor. i wanted to make a ui that made sense so i went with a ribbon (a type of ui made of tabs and toolbars) similar to what you would see in office apps and the file explorer in windows 8 8.1 and 10.
+i created noteribbon on march 23 2025 because i wanted a much cleaner user interface for the palettes that noteflight uses in the score editor. i didnt like the messy score palette and i wanted to make a ui that made sense so i went with a ribbon (a type of ui made of tabs and toolbars) similar to what youd see in office apps and the file explorer in windows 8, 8.1, and 10
 
 ## download
 
@@ -12,7 +12,7 @@ its also available on greasyfork
 
 ## documentation
 
-go to the [wiki](https://github.com/unseeable8710/noteribbon/wiki) for documentation about noteribbon its features how to use it the versioning system etc.
+go to the [wiki](https://github.com/unseeable8710/noteribbon/wiki) for documentation about noteribbon, its features, how to use it, the versioning system, etc
 
 ## gallery
 
