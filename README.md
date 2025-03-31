@@ -1,14 +1,20 @@
-# NoteRibbon
+# noteribbon
 
-## About
+## about
 
-I created NoteRibbon on March 23, 2025 because I wanted a much cleaner user interface for the palettes that Noteflight uses in the score editor. I wanted to make a UI that made sense, so I went with a ribbon (a type of UI made of tabs and toolbars), similar to what you would see in Office apps and the File Explorer in Windows 8, 8.1, and 10.
+i created noteribbon on march 23 2025 because i wanted a much cleaner user interface for the palettes that noteflight uses in the score editor. i wanted to make a ui that made sense so i went with a ribbon (a type of ui made of tabs and toolbars) similar to what you would see in office apps and the file explorer in windows 8 8.1 and 10.
 
-## Documentation
+## download
 
-Go to the [wiki](https://github.com/Unseeable8710/NoteRibbon/wiki) for documentation about NoteRibbon, its features, how to use it, the versioning system, etc.
+you can download the userscript here: [https://github.com/unseeable8710/noteribbon/raw/refs/heads/main/script/noteribbon.user.js](https://github.com/unseeable8710/noteribbon/raw/refs/heads/main/script/noteribbon.user.js)
 
-## Gallery
+its also available on greasyfork
 
-![image](https://github.com/user-attachments/assets/3b211c7d-4739-4ea4-b357-0bc02c1bfccf "Windows 10 ribbon")
-<figcaption>Windows 10 ribbon</figcaption>
+## documentation
+
+go to the [wiki](https://github.com/unseeable8710/noteribbon/wiki) for documentation about noteribbon its features how to use it the versioning system etc.
+
+## gallery
+
+![image](https://github.com/user-attachments/assets/3b211c7d-4739-4ea4-b357-0bc02c1bfccf "windows 10 ribbon")
+<figcaption>windows 10 ribbon</figcaption>
