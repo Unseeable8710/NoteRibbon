@@ -22,7 +22,13 @@ const soundTab = document.getElementById("soundTab");
 const viewTab = document.getElementById("viewTab");
 const tabs = [fileTab, editTab, durationTab, rhythmTab, pitchTab, tempoTab, textTab, measureTab, layoutTab, bracketsTab, repeatTab, dynamicsTab, articulationTab, ornamentTab, noteTab, voiceTab, tabTab, linesTab, colorTab, soundTab, viewTab];
 var state = false;
-var cssDoc = getStyleSheet("webapp-f5f4ac4e41f43f9d9ca445ed9591e5a8");
+var cssDoc = () => {
+  try {
+    return getStyleSheet("webapp-f5f4ac4e41f43f9d9ca445ed9591e5a8");
+  } catch (err) {
+    console.log(err);
+  }
+};
 var sheet = cssDoc.sheet ? cssDoc.sheet : cssDoc.styleSheet;
 
 function toggleTab(tab) {
