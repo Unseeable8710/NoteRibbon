@@ -53,33 +53,35 @@
   </div>
   <style>
     #ribbon {
-      --borderColor1: hsl(0, 0%, 77%);
+      --borderColor1: hsl(0, 0%, 80%);
       --nfcol: hsl(16, 99%, 43%);
       --nfcolHover: hsl(16, 99%, 53%);
       --nfcolClick: hsl(16, 99%, 33%);
       --nfcolActive: hsl(16, 99%, 43%);
       --nfcolDark: hsl(16, 99%, 33%);
       --hoverCol: hsl(0, 0%, 95%);
-      --clickCol: hsl(0, 0%, 75%);
-      --activeCol: hsl(0, 0%, 85%);
-      --nfcolAlt: hsl(0, 0%, 90%);
+      --clickCol: hsl(0, 0%, 85%);
+      --activeCol: hsl(16, 99%, 85%);
+      --tabColor: hsl(0, 0%, 100%);
     }
     #toolbars {
       position: absolute;
-      top: 0%;
+      top: calc(3vh + 5vh / 6vh);
       left: 0%;
       width: 100vw;
+      height: calc(100vh - (3vh + 5vh / 6vh));
+      border-top: 1px var(--borderColor1) solid;
       border-bottom: 1px var(--borderColor1) solid;
     }
     .tab {
       display: inline;
       color: var(--nfcol);
-      font-size: 12pt;
-      background-color: var(--nfcolAlt);
-      height: 13pt;
-      border-top: 1px var(--borderColor1);
-      border-left: 1px var(--borderColor1);
-      border-right: 1px var(--borderColor1);
+      font-size: 15pt;
+      background-color: var(--tabCol);
+      height: 2.5vh;
+      border-top: 1px var(--borderColor1) solid;
+      border-left: 1px var(--borderColor1) solid;
+      border-right: 1px var(--borderColor1) solid;
     }
     #fileTab {
       color: var(--nfcolAlt) !important;
@@ -99,6 +101,10 @@
     }
     .activeTab {
       background-color: var(--activeCol);
+      border-bottom: 1px var(--tabColor) solid;
+    }
+    #toolbars {
+      z-index: -1;
     }
     .activeTab #fileTab {
       background-color: var(--nfcolActive);

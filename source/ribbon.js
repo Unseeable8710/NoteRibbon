@@ -25,8 +25,7 @@ var state = false;
 var cssDoc = getStyleSheet("webapp-f5f4ac4e41f43f9d9ca445ed9591e5a8");
 var sheet = cssDoc.sheet ? cssDoc.sheet : cssDoc.styleSheet;
 
-function toggleTab(e, tab) {
-  e.preventDefault();
+function toggleTab(tab) {
   if (!tab.classList.contains("activeTab")) {
     tab.classList.add("activeTab");
     for (var i = 0; i < tabs.length; i++) {
@@ -40,7 +39,8 @@ function toggleTab(e, tab) {
 for (var i = 0; i < tabs.length; i++) {
   var tab = tabs[i];
   tab.addEventListener("click", (e) => {
-    toggleTab(e, e.target);
+    e.preventDefault();
+    toggleTab(e.target);
   });
 }
 
