@@ -34,10 +34,10 @@ var sheet = cssDoc.sheet ? cssDoc.sheet : cssDoc.styleSheet;
 function toggleTab(tab) {
   if (!tab.classList.contains("activeTab")) {
     tab.classList.add("activeTab");
-    for (var i = 0; i < tabs.length; i++) {
-      if (tabs[i] != tab) {
-        tabs[i].classList.remove("activeTab");
-      }
+  }
+  for (var i = 0; i < tabs.length; i++) {
+    if (tabs[i] != tab) {
+      tabs[i].classList.remove("activeTab");
     }
   }
 }
@@ -46,6 +46,7 @@ for (var i = 0; i < tabs.length; i++) {
   var tab = tabs[i];
   tab.addEventListener("click", (e) => {
     e.preventDefault();
+    alert("clicked!");
     toggleTab(e.target);
   });
 }
