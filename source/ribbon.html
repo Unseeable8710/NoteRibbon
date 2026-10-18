@@ -1,135 +1,216 @@
 <div id="ribbon">
   <div id="tabs">
-    <div id="fileTab" class="tab activeTab">
-      <span>File</span>
-    </div>
-    <div id="editTab" class="tab">
+    <button id="fileTab" class="tab activeTab">
+      <span>Score</span>
+    </button>
+    <button id="editTab" class="tab inactiveTab">
       <span>Edit</span>
-    </div>
-    <div id="durationTab" class="tab">
+    </button>
+    <button id="durationTab" class="tab inactiveTab">
       <span>Duration</span>
-    </div>
-    <div id="rhythmTab" class="tab">
+    </button>
+    <button id="rhythmTab" class="tab inactiveTab">
       <span>Rhythm</span>
-    </div>
-    <div id="pitchTab" class="tab">
+    </button>
+    <button id="pitchTab" class="tab inactiveTab">
       <span>Pitch</span>
-    </div>
-    <div id="tempoTab" class="tab">
+    </button>
+    <button id="tempoTab" class="tab inactiveTab">
       <span>Tempo</span>
-    </div>
-    <div id="textTab" class="tab">
+    </button>
+    <button id="textTab" class="tab inactiveTab">
       <span>Text</span>
-    </div>
-    <div id="measureTab" class="tab">
+    </button>
+    <button id="measureTab" class="tab inactiveTab">
       <span>Measure</span>
-    </div>
-    <div id="layoutTab" class="tab">
+    </button>
+    <button id="layoutTab" class="tab inactiveTab">
       <span>Layout</span>
-    </div>
-    <div id="bracketsTab" class="tab">
+    </button>
+    <button id="bracketsTab" class="tab inactiveTab">
       <span>Brackets</span>
-    </div>
-    <div id="repeatTab" class="tab">
+    </button>
+    <button id="repeatTab" class="tab inactiveTab">
       <span>Repeat</span>
-    </div>
-    <div id="dynamicsTab" class="tab">
+    </button>
+    <button id="dynamicsTab" class="tab inactiveTab">
       <span>Dynamics</span>
-    </div>
-    <div id="articulationTab" class="tab">
+    </button>
+    <button id="articulationTab" class="tab inactiveTab">
       <span>Articulation</span>
-    </div>
-    <div id="ornamentTab" class="tab">
+    </button>
+    <button id="ornamentTab" class="tab inactiveTab">
       <span>Ornament</span>
-    </div>
-    <div id="noteTab" class="tab">
+    </button>
+    <button id="noteTab" class="tab inactiveTab">
       <span>Note</span>
-    </div>
-    <div id="voiceTab" class="tab">
+    </button>
+    <button id="voiceTab" class="tab inactiveTab">
       <span>Voice</span>
-    </div>
-    <div id="tabTab" class="tab">
+    </button>
+    <button id="tabTab" class="tab inactiveTab">
       <span>Tab</span>
-    </div>
-    <div id="linesTab" class="tab">
+    </button>
+    <button id="linesTab" class="tab inactiveTab">
       <span>Lines</span>
-    </div>
-    <div id="colorTab" class="tab">
+    </button>
+    <button id="colorTab" class="tab inactiveTab">
       <span>Color</span>
-    </div>
-    <div id="soundTab" class="tab">
+    </button>
+    <button id="soundTab" class="tab inactiveTab">
       <span>Sound</span>
-    </div>
-    <div id="viewTab" class="tab">
+    </button>
+    <button id="viewTab" class="tab inactiveTab">
       <span>View</span>
-    </div>
+    </button>
   </div>
   <div id="toolbars">
-    <div id="filePalette" class="palette">
+    <div id="filePalette" class="palette activePalette">
       <div class="paletteElement paletteButton toggleInstrumentsPanel" role="button" data-bind="visible: visible, css: css, click: clicked, tip: {title: title, shortcut: shortcut}, attr: {id: controlId}" id="control-toggleInstrumentsPanel">
-        <i class="nf-icon"></i>
-        <span data-bind="resource: title" data-resource="palette.toggleInstrumentsPanel">Parts</span>
+        <!-- <i class="nf-icon"></i> -->
+        <!-- <span data-bind="resource: title" data-resource="palette.toggleInstrumentsPanel">Parts</span> -->
         <!-- ko if: shortcut --><!-- /ko -->
       </div>
     </div>
-    <div id="editPalette" class="palette hiddenPalette">
-
+    <div id="editPalette" class="palette inactivePalette">
+      <div class="paletteElement paletteButton toggleInstrumentsPanel" role="button" data-bind="visible: visible, css: css, click: clicked, tip: {title: title, shortcut: shortcut}, attr: {id: controlId}" id="control-toggleInstrumentsPanel">
+        <!-- <i class="nf-icon"></i> -->
+        <!-- <span data-bind="resource: title" data-resource="palette.toggleInstrumentsPanel">Parts</span> -->
+        <!-- ko if: shortcut --><!-- /ko -->
+      </div>
     </div>
-    <div id="durationPalette" class="palette hiddenPalette">
-      
+    <div id="durationPalette" class="palette inactivePalette">
+      <div class="paletteElement paletteButton toggleInstrumentsPanel" role="button" data-bind="visible: visible, css: css, click: clicked, tip: {title: title, shortcut: shortcut}, attr: {id: controlId}" id="control-toggleInstrumentsPanel">
+        <!-- <i class="nf-icon"></i> -->
+        <!-- <span data-bind="resource: title" data-resource="palette.toggleInstrumentsPanel">Parts</span> -->
+        <!-- ko if: shortcut --><!-- /ko -->
+      </div>
     </div>
-    <div id="rhythmPalette" class="palette hiddenPalette">
-
+    <div id="rhythmPalette" class="palette inactivePalette">
+      <div class="paletteElement paletteButton toggleInstrumentsPanel" role="button" data-bind="visible: visible, css: css, click: clicked, tip: {title: title, shortcut: shortcut}, attr: {id: controlId}" id="control-toggleInstrumentsPanel">
+        <!-- <i class="nf-icon"></i> -->
+        <!-- <span data-bind="resource: title" data-resource="palette.toggleInstrumentsPanel">Parts</span> -->
+        <!-- ko if: shortcut --><!-- /ko -->
+      </div>
     </div>
-    <div id="pitchPalette" class="palette hiddenPalette">
-
+    <div id="pitchPalette" class="palette inactivePalette">
+      <div class="paletteElement paletteButton toggleInstrumentsPanel" role="button" data-bind="visible: visible, css: css, click: clicked, tip: {title: title, shortcut: shortcut}, attr: {id: controlId}" id="control-toggleInstrumentsPanel">
+        <!-- <i class="nf-icon"></i> -->
+        <!-- <span data-bind="resource: title" data-resource="palette.toggleInstrumentsPanel">Parts</span> -->
+        <!-- ko if: shortcut --><!-- /ko -->
+      </div>
     </div>
-    <div id="tempoPalette" class="palette hiddenPalette">
-
+    <div id="tempoPalette" class="palette inactivePalette">
+      <div class="paletteElement paletteButton toggleInstrumentsPanel" role="button" data-bind="visible: visible, css: css, click: clicked, tip: {title: title, shortcut: shortcut}, attr: {id: controlId}" id="control-toggleInstrumentsPanel">
+        <!-- <i class="nf-icon"></i> -->
+        <!-- <span data-bind="resource: title" data-resource="palette.toggleInstrumentsPanel">Parts</span> -->
+        <!-- ko if: shortcut --><!-- /ko -->
+      </div>
     </div>
-    <div id="textPalette" class="palette hiddenPalette">
-
+    <div id="textPalette" class="palette inactivePalette">
+      <div class="paletteElement paletteButton toggleInstrumentsPanel" role="button" data-bind="visible: visible, css: css, click: clicked, tip: {title: title, shortcut: shortcut}, attr: {id: controlId}" id="control-toggleInstrumentsPanel">
+        <!-- <i class="nf-icon"></i> -->
+        <!-- <span data-bind="resource: title" data-resource="palette.toggleInstrumentsPanel">Parts</span> -->
+        <!-- ko if: shortcut --><!-- /ko -->
+      </div>
     </div>
-    <div id="measurePalette" class="palette hiddenPalette">
-
+    <div id="measurePalette" class="palette inactivePalette">
+      <div class="paletteElement paletteButton toggleInstrumentsPanel" role="button" data-bind="visible: visible, css: css, click: clicked, tip: {title: title, shortcut: shortcut}, attr: {id: controlId}" id="control-toggleInstrumentsPanel">
+        <!-- <i class="nf-icon"></i> -->
+        <!-- <span data-bind="resource: title" data-resource="palette.toggleInstrumentsPanel">Parts</span> -->
+        <!-- ko if: shortcut --><!-- /ko -->
+      </div>
     </div>
-    <div id="layoutPalette" class="palette hiddenPalette">
-
+    <div id="layoutPalette" class="palette inactivePalette">
+      <div class="paletteElement paletteButton toggleInstrumentsPanel" role="button" data-bind="visible: visible, css: css, click: clicked, tip: {title: title, shortcut: shortcut}, attr: {id: controlId}" id="control-toggleInstrumentsPanel">
+        <!-- <i class="nf-icon"></i> -->
+        <!-- <span data-bind="resource: title" data-resource="palette.toggleInstrumentsPanel">Parts</span> -->
+        <!-- ko if: shortcut --><!-- /ko -->
+      </div>
     </div>
-    <div id="bracketsPalette" class="palette hiddenPalette"
-    ></div>
-    <div id="repeatPalette" class="palette hiddenPalette">
-
+    <div id="bracketsPalette" class="palette inactivePalette">
+      <div class="paletteElement paletteButton toggleInstrumentsPanel" role="button" data-bind="visible: visible, css: css, click: clicked, tip: {title: title, shortcut: shortcut}, attr: {id: controlId}" id="control-toggleInstrumentsPanel">
+        <!-- <i class="nf-icon"></i> -->
+        <!-- <span data-bind="resource: title" data-resource="palette.toggleInstrumentsPanel">Parts</span> -->
+        <!-- ko if: shortcut --><!-- /ko -->
+      </div>
     </div>
-    <div id="dynamicsPalette" class="palette hiddenPalette">
-
+    <div id="repeatPalette" class="palette inactivePalette">
+      <div class="paletteElement paletteButton toggleInstrumentsPanel" role="button" data-bind="visible: visible, css: css, click: clicked, tip: {title: title, shortcut: shortcut}, attr: {id: controlId}" id="control-toggleInstrumentsPanel">
+        <!-- <i class="nf-icon"></i> -->
+        <!-- <span data-bind="resource: title" data-resource="palette.toggleInstrumentsPanel">Parts</span> -->
+        <!-- ko if: shortcut --><!-- /ko -->
+      </div>
     </div>
-    <div id="articulationPalette" class="palette hiddenPalette">
-
+    <div id="dynamicsPalette" class="palette inactivePalette">
+      <div class="paletteElement paletteButton toggleInstrumentsPanel" role="button" data-bind="visible: visible, css: css, click: clicked, tip: {title: title, shortcut: shortcut}, attr: {id: controlId}" id="control-toggleInstrumentsPanel">
+        <!-- <i class="nf-icon"></i> -->
+        <!-- <span data-bind="resource: title" data-resource="palette.toggleInstrumentsPanel">Parts</span> -->
+        <!-- ko if: shortcut --><!-- /ko -->
+      </div>
     </div>
-    <div id="ornamentPalette" class="palette hiddenPalette">
-
+    <div id="articulationPalette" class="palette inactivePalette">
+      <div class="paletteElement paletteButton toggleInstrumentsPanel" role="button" data-bind="visible: visible, css: css, click: clicked, tip: {title: title, shortcut: shortcut}, attr: {id: controlId}" id="control-toggleInstrumentsPanel">
+        <!-- <i class="nf-icon"></i> -->
+        <!-- <span data-bind="resource: title" data-resource="palette.toggleInstrumentsPanel">Parts</span> -->
+        <!-- ko if: shortcut --><!-- /ko -->
+      </div>
     </div>
-    <div id="notePalette" class="palette hiddenPalette">
-
+    <div id="ornamentPalette" class="palette inactivePalette">
+      <div class="paletteElement paletteButton toggleInstrumentsPanel" role="button" data-bind="visible: visible, css: css, click: clicked, tip: {title: title, shortcut: shortcut}, attr: {id: controlId}" id="control-toggleInstrumentsPanel">
+        <!-- <i class="nf-icon"></i> -->
+        <!-- <span data-bind="resource: title" data-resource="palette.toggleInstrumentsPanel">Parts</span> -->
+        <!-- ko if: shortcut --><!-- /ko -->
+      </div>
     </div>
-    <div id="voicePalette" class="palette hiddenPalette">
-
+    <div id="notePalette" class="palette inactivePalette">
+      <div class="paletteElement paletteButton toggleInstrumentsPanel" role="button" data-bind="visible: visible, css: css, click: clicked, tip: {title: title, shortcut: shortcut}, attr: {id: controlId}" id="control-toggleInstrumentsPanel">
+        <!-- <i class="nf-icon"></i> -->
+        <!-- <span data-bind="resource: title" data-resource="palette.toggleInstrumentsPanel">Parts</span> -->
+        <!-- ko if: shortcut --><!-- /ko -->
+      </div>
     </div>
-    <div id="tabPalette" class="palette hiddenPalette">
-      
+    <div id="voicePalette" class="palette inactivePalette">
+      <div class="paletteElement paletteButton toggleInstrumentsPanel" role="button" data-bind="visible: visible, css: css, click: clicked, tip: {title: title, shortcut: shortcut}, attr: {id: controlId}" id="control-toggleInstrumentsPanel">
+        <!-- <i class="nf-icon"></i> -->
+        <!-- <span data-bind="resource: title" data-resource="palette.toggleInstrumentsPanel">Parts</span> -->
+        <!-- ko if: shortcut --><!-- /ko -->
+      </div>
     </div>
-    <div id="linesPalette" class="palette hiddenPalette">
-
+    <div id="tabPalette" class="palette inactivePalette">
+      <div class="paletteElement paletteButton toggleInstrumentsPanel" role="button" data-bind="visible: visible, css: css, click: clicked, tip: {title: title, shortcut: shortcut}, attr: {id: controlId}" id="control-toggleInstrumentsPanel">
+        <!-- <i class="nf-icon"></i> -->
+        <!-- <span data-bind="resource: title" data-resource="palette.toggleInstrumentsPanel">Parts</span> -->
+        <!-- ko if: shortcut --><!-- /ko -->
+      </div>
     </div>
-    <div id="colorPalette" class="palette hiddenPalette">
-
+    <div id="linesPalette" class="palette inactivePalette">
+      <div class="paletteElement paletteButton toggleInstrumentsPanel" role="button" data-bind="visible: visible, css: css, click: clicked, tip: {title: title, shortcut: shortcut}, attr: {id: controlId}" id="control-toggleInstrumentsPanel">
+        <!-- <i class="nf-icon"></i> -->
+        <!-- <span data-bind="resource: title" data-resource="palette.toggleInstrumentsPanel">Parts</span> -->
+        <!-- ko if: shortcut --><!-- /ko -->
+      </div>
     </div>
-    <div id="soundPalette" class="palette hiddenPalette">
-
+    <div id="colorPalette" class="palette inactivePalette">
+      <div class="paletteElement paletteButton toggleInstrumentsPanel" role="button" data-bind="visible: visible, css: css, click: clicked, tip: {title: title, shortcut: shortcut}, attr: {id: controlId}" id="control-toggleInstrumentsPanel">
+        <!-- <i class="nf-icon"></i> -->
+        <!-- <span data-bind="resource: title" data-resource="palette.toggleInstrumentsPanel">Parts</span> -->
+        <!-- ko if: shortcut --><!-- /ko -->
+      </div>
     </div>
-    <div id="viewPalette" class="palette hiddenPalette">
-
+    <div id="soundPalette" class="palette inactivePalette">
+      <div class="paletteElement paletteButton toggleInstrumentsPanel" role="button" data-bind="visible: visible, css: css, click: clicked, tip: {title: title, shortcut: shortcut}, attr: {id: controlId}" id="control-toggleInstrumentsPanel">
+        <!-- <i class="nf-icon"></i> -->
+        <!-- <span data-bind="resource: title" data-resource="palette.toggleInstrumentsPanel">Parts</span> -->
+        <!-- ko if: shortcut --><!-- /ko -->
+      </div>
+    </div>
+    <div id="viewPalette" class="palette inactivePalette">
+      <div class="paletteElement paletteButton toggleInstrumentsPanel" role="button" data-bind="visible: visible, css: css, click: clicked, tip: {title: title, shortcut: shortcut}, attr: {id: controlId}" id="control-toggleInstrumentsPanel">
+        <!-- <i class="nf-icon"></i> -->
+        <!-- <span data-bind="resource: title" data-resource="palette.toggleInstrumentsPanel">Parts</span> -->
+        <!-- ko if: shortcut --><!-- /ko -->
+      </div>
     </div>
   </div>
   <style>
@@ -141,16 +222,17 @@
       --nfcolActive: hsl(16, 99%, 43%);
       --nfcolDark: hsl(16, 99%, 33%);
       --hoverCol: hsl(0, 0%, 95%);
+      --activeHovCol: hsl(16, 99%, 68%);
       --clickCol: hsl(0, 0%, 85%);
-      --activeCol: hsl(16, 99%, 85%);
+      --activeClickCol: hsl(16, 99%, 45%);
+      --activeCol: hsl(16, 99%, 55%);
       --tabColor: hsl(0, 0%, 100%);
     }
     #toolbars {
       position: absolute;
-      top: calc(3vh + 5vh / 6vh);
       left: 0%;
-      width: 100vw;
-      height: calc(100vh - (3vh + 5vh / 6vh));
+      width: 100%;
+      height: 10%;
       border-top: 1px var(--borderColor1) solid;
       border-bottom: 1px var(--borderColor1) solid;
     }
@@ -159,16 +241,25 @@
       padding: 5px;
       color: var(--nfcol);
       background-color: var(--tabCol);
-      border-top: 1px var(--borderColor1) solid;
-      border-left: 1px var(--borderColor1) solid;
-      border-right: 1px var(--borderColor1) solid;
+      border: 1px var(--borderColor1) solid;
+      border-bottom: none;
+      border-top-left-radius: 1px;
+      border-top-right-radius: 1px;
 
       span {
-        position: absolute;
-        font-size: 20px;
+        display: block;
+        font-size: 14px;
       }
     }
-    #fileTab {
+    .inactiveTab {
+      &:hover {
+        background-color: var(--hoverCol);
+      }
+      &:active {
+        background-color: var(--clickCol);
+      }
+    }
+    /* #fileTab {
       color: var(--nfcolAlt) !important;
       background-color: var(--nfcol) !important;
     }
@@ -177,26 +268,28 @@
     }
     #fileTab:active {
       background-color: var(--nfcolClick) !important;
-    }
-    .tab:hover {
-      background-color: var(--hoverCol);
-    }
-    .tab:active {
-      background-color: var(--clickCol);
-    }
+    } */
     .activeTab {
       background-color: var(--activeCol);
-      border-bottom: 1px var(--tabColor) solid;
+      color: #ffffff;
+      
+      &:hover {
+        background-color: var(--activeHovCol);
+      }
+      &:active {
+        background-color: var(--activeClickCol);
+      }
     }
-    #toolbars {
-      z-index: -1;
-    }
-    .activeTab #fileTab {
+    /* .activeTab #fileTab {
       background-color: var(--nfcolActive);
-    }
-    #hiddenPalette {
+    } */
+    .palette {
       display: none;
       pointer-events: none;
+    }
+    .activePalette {
+      display: block;
+      pointer-events: all;
     }
   </style>
   <script src="./ribbon.js"></script>

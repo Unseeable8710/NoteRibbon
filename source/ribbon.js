@@ -20,7 +20,8 @@ const linesTab = document.getElementById("linesTab");
 const colorTab = document.getElementById("colorTab");
 const soundTab = document.getElementById("soundTab");
 const viewTab = document.getElementById("viewTab");
-const tabs = [fileTab, editTab, durationTab, rhythmTab, pitchTab, tempoTab, textTab, measureTab, layoutTab, bracketsTab, repeatTab, dynamicsTab, articulationTab, ornamentTab, noteTab, voiceTab, tabTab, linesTab, colorTab, soundTab, viewTab];
+const tabs = document.querySelectorAll(".tab");
+const palettes = document.querySelectorAll(".palette");
 var state = false;
 var cssDoc = () => {
   try {
@@ -31,25 +32,23 @@ var cssDoc = () => {
 };
 var sheet = cssDoc.sheet ? cssDoc.sheet : cssDoc.styleSheet;
 
-function toggleTab(tab) {
-  if (!tab.classList.contains("activeTab")) {
-    tab.classList.add("activeTab");
-  }
-  for (var i = 0; i < tabs.length; i++) {
-    if (tabs[i] != tab) {
-      tabs[i].classList.remove("activeTab");
-    }
-  }
-}
+tabs.forEach((tab, i) => {
+  tab.addEventListener("click", () => {
+    tabs.forEach((t) => {
+      t.classList.add("inactiveTab");
+      t.classList.remove("activeTab");
+    });
+    palettes.forEach((p) => {
+      p.classList.add("inactivePalette");
+      p.classList.remove("activePalette");
+    });
 
-for (var i = 0; i < tabs.length; i++) {
-  var tab = tabs[i];
-  tab.addEventListener("click", (e) => {
-    e.preventDefault();
-    alert("clicked!");
-    toggleTab(e.target);
+    tab.classList.add("activeTab");
+    tab.classList.remove("inactiveTab");
+    palettes[i].classList.add("activePalette");
+    palettes[i].classList.remove("inactivePalette");
   });
-}
+});
 
 function getStyleSheet(title) {
   for(var i = 0; i < document.styleSheets.length; i++) {

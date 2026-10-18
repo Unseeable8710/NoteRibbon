@@ -1,12 +1,5 @@
-var uwind = uwindow = unsafeWindow;
+var uw = uwind = uwindow = unsafeWindow;
 
-function showHideSettings() {
-  if (getElem("#noteRibbonSettings.hid") != null) {
-    getElem("#noteRibbonSettings").classList.remove("hid");
-  } else if (getElem("#noteRibbonSetings") == null) {
-    getElem("#noteRibbonSettings").classList.add("hid");
-  }
-}
 function getElem(selector) {
   return new Promise(resolve => {
     if (document.querySelector(selector)) {
@@ -25,6 +18,14 @@ function getElem(selector) {
     });
   });
 }
+function showHideSettings() {
+  if (getElem("#noteRibbonSettings.hid") != null) {
+    getElem("#noteRibbonSettings").classList.remove("hid");
+  } else if (getElem("#noteRibbonSetings") == null) {
+    getElem("#noteRibbonSettings").classList.add("hid");
+  }
+}
+
 GM_registerMenuCommand("Open NoteRibbon Settings", showHideSettings);
 
 (function() {

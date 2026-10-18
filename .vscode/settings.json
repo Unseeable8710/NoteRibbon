@@ -5,5 +5,6 @@
   "spellright.documentTypes": [
     "markdown",
     "latex"
-  ]
+  ],
+  "sarif-viewer.connectToGithubCodeScanning": "off"
 }
