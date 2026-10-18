@@ -28,6 +28,23 @@ function showHideSettings() {
 
 GM_registerMenuCommand("Open NoteRibbon Settings", showHideSettings);
 
+async function getRemoteHTML(url) {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error: Status: ${response.status}`);
+    }
+    const htmlText = await response.text();
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(htmlText, 'text/html');
+    return doc;
+  } catch (error) {
+    console.error('Failed to fetch or parse HTML:', error);
+  }
+}
+
+console.log(getRemoteHTML("https://raw.githubusercontent.com/Unseeable8710/NoteRibbon/refs/heads/main/source/ribbon.html"));
+
 (function() {
   const scorePalette = getElem("#scorePalette");
   const settingsElem = document.createElement("div");

@@ -64,14 +64,14 @@ function delCssRule(rule) {
     for (var i = 0; i < sheet.cssRules.length; i++) {
       if (sheet.cssRules[i].selectorText === rule) {
         // console.log(sheet.cssRules[i]);
-        sheet.deleteRule (i);
+        sheet.deleteRule(i);
       }
     }
   } else {
     for (var i = 0; i < sheet.rules.length; i++) {
       if (sheet.rules[i].selectorText === rule) {
         // console.log(sheet.cssRules[i]);
-        sheet.removeRule (i);
+        sheet.removeRule(i);
       }
     }
   }
