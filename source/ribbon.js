@@ -1,4 +1,4 @@
-const ribbon = document.getElementById("ribbon").innerHTML;
+const ribbon = document.getElementById("ribbon");
 const fileTab = document.getElementById("fileTab");
 const editTab = document.getElementById("editTab");
 const durationTab = document.getElementById("durationTab");
